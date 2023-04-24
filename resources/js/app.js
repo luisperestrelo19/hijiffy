@@ -1,7 +1,12 @@
-import './bootstrap';
+import "./bootstrap";
 
-import {createApp} from 'vue';
-import Question from './components/Question.vue';
+import { createApp } from "vue";
+import App from "./App.vue";
+import router from "./route";
+import VueSession from "vue-session";
+import { createStore } from "vuex";
 
 
-createApp(Question).mount('#app');
+const app = createApp(App);
+app.use(router);
+app.mount("#app");

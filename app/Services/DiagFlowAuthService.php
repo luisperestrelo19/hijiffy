@@ -13,6 +13,7 @@ class DiagFlowAuthService
     public function __construct()
     {
         $this->filePath = storage_path('app/hijiffy.json');
+        putenv("GOOGLE_APPLICATION_CREDENTIALS=$this->filePath");
     }
 
     public function createAgent()
@@ -22,7 +23,7 @@ class DiagFlowAuthService
 
         $agent = (new V2Agent())
             ->setParent($parent)
-            ->setDisplayName('api-agent2')
+            ->setDisplayName(\Str::random())
             ->setTimeZone('Europe/Paris');
 
         $agentClient->setAgent($agent);
@@ -60,6 +61,5 @@ class DiagFlowAuthService
         foreach ($createIntentData as $data) {
             $create->createIntent($data);
         }
-
     }
 }
