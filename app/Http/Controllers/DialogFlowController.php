@@ -37,12 +37,12 @@ class DialogFlowController extends Controller
 
         $response     = $sessionsClient->detectIntent($session, $queryInput);
         if ($response->getQueryResult()->getIntent() === null) {
-            return response()->json(['data' => 'No results.'], Response::HTTP_BAD_REQUEST);
+            return response()->json(['message' => 'No results.'], Response::HTTP_BAD_REQUEST);
         }
 
         $responseText = $response->getQueryResult()->getFulfillmentText();
         $sessionsClient->close();
 
-        return response()->json(['data' => $responseText]);
+        return response()->json(['message' => $responseText]);
     }
 }

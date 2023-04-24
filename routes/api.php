@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DialogFlowController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -20,4 +21,13 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 });
 
 
-Route::get('question', [DialogFlowController::class, 'question']);
+Route::post('auth/login', [AuthController::class, 'login']);
+
+Route::middleware('auth:api')->group(function () {
+    Route::group([ 'prefix' => 'auth'], function ($router) {
+        Route::post('logout', [AuthController::class, 'logout']);
+        Route::get('me', [AuthController::class, 'me']);
+    });
+
+    Route::get('question', [DialogFlowController::class, 'question']);
+});

@@ -64,10 +64,10 @@ export default {
         })
         .then((response) => {
           this.isVisible = true;
-          this.answer = response.data.data;
+          this.answer = response.data.message;
         })
         .catch((error) => {
-          alert(error.response.data.data);
+          alert(error.response.data.message);
         });
     },
   },

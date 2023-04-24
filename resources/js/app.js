@@ -1,7 +1,7 @@
 import './bootstrap';
 
 import {createApp} from 'vue';
-import Welcome from './components/Welcome.vue';
+import Question from './components/Question.vue';
 
 
-createApp(Welcome).mount('#app');
+createApp(Question).mount('#app');
