@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "hijiffy-challenge",
+  "private_key_id": "e8f8b5dbb825b448a0c01ead0a258b45b3aa8385",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDAVwYZDt9GoCBx\nOFLLNHQkVLSdW9oj5YKoMnd8ZiNOHLgH6xA5ammJQFuJ7Gl06EIueavVBzimqMF4\nVCfRvdhNBJcyYPTmOG2MsINFoeN/s8K6Uo5dD4RGEXVdNx8GvVD3T+6fHPHxU0JK\nIqZJ28w3LUrew68qtOHWkbO/qMRqdgG3A7xMxbHpvS12QgwFbJZLskqGbLaggX9J\noLTUBoEwj59XRv/8nDaWQQHJOjKkfgcYBHskYBbXmMMQ/OAzYPuL369iM6i8DRXw\ny6t4nGs9pblG8D7CfMvOv/K4ybXpiDl7WJOZo86EOX1+F9nSd0Ggwx1Um9EXVIbT\nj5GwzBOfAgMBAAECggEAOA9FPjl4909FlWpaq1KDBXHQ4Mp8Rpkm31oyPEZSxPoW\n42vuYyWyU+g3pfgLdqEZZQ1eeW0s5FpsZWN15aqFKFGNtgfPaWiJ+YcbA8kfE0H0\nIDVevB4BKiD9iak+uEqmliasgKDBndpsCEqYGA/hsjVXzJzRaculxVHbR6HrebGh\nDA/CWXZ9E18H3mn9XpgTEKc+/MgdcfrmLnt1fsjRcNAnelw5odJjjp20rwgeE5dB\nCQB9V3p8r3CrGhvuZltDsTgWl4g2tPUP1wdTTiiQ8edZxngnln6SnwrBlFQ+rBw0\nrJYaN/Ae14z/xV+ccMSj2d36u9KDGAfFOHjrnh3ovQKBgQDf0GsujrZ+N06SGfh0\nC1DVLrp7NiyGMRUcAh+fx9aQcQxiNfwceD24ixMhcYxb71NJGzQ/fWC5XbMqMYyp\nZSN2bEdbFLUANX42gy2WWlKnFMB8Nsxy92pojS739cAWmCN1WB0OTlC11J02QKLw\n+6xP7Vlj6JBmuwfGr469SN0g9QKBgQDb/+bStONIZEa+7+Stx/OsW2JSLzu63vAD\npnnrSkZiypoDAUdngA2oxrKdAdkZZMiTrHlo4Mvb1P/gypj/HAD0j9+8+K6nmTys\nfFL3TIOARZlJV35VRs3xE1L1sdoNNdcuxHZuozDbZxLjn8GBRPGFPNVlNLsaxYxY\nx806/5x1wwKBgCbW91KsB3Vdya/G+/u/Xvav1kK9gvqCmAQ1RiGnP0/vnlOIxMh4\nAVX+JILAPrhRjuV36BhAfMGORiJDWQKof3/0iGmA7Wws3Es/dnDKGd/O1Rx5Mf+d\negTMw2Labcw9+KFLejdaVd1IGUQp8Vzaf+ua59FTsYNyX4YWPzIP6/flAoGAGyTJ\nv/mdiVMF/4zttBtVj1B/IxC81+OlzW1+4W76nDnPIsvHmZeNF+PcKc8OkDmFHeNL\n34rM3ES9hWi509AKtiICQviT5A3eFJIKUoTYPL1Zmlj3N2JTComN1M6qzrJz6EtJ\nKYFtB8UB6Z/OajqtafkFg0UsSLNTC6krQzpCfa0CgYEA2Lo6+T7RrpJxenMWc/o2\nimCxf/CVBVF8+6QNiEAVWIHI4F4aYX2EaM65UkcdDIkrDqP3voWa59NegqrTpKlp\n+uVy7evAeAYyEqPy99wX6dmU7ZR43z9MElCSiFKGUBhSXyMWdHktxT8S2FXbob0i\n03QHRx4HHwyN+Otl1rRLHaQ=\n-----END PRIVATE KEY-----\n",
+  "client_email": "diagflow-api@hijiffy-challenge.iam.gserviceaccount.com",
+  "client_id": "111392225168904199308",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/diagflow-api%40hijiffy-challenge.iam.gserviceaccount.com"
+}
