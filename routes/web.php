@@ -15,11 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $a = new DiagFlowAuthService;
-
-    $c = env('GOOGLE_APPLICATION_CREDENTIALS');
-    //dd($c);
-    $tes = $a->createIntent();
-
-    dd($tes);
+    return view('app');
 });
