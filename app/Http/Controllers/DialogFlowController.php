@@ -20,7 +20,7 @@ class DialogFlowController extends Controller
     {
         $input          = (request()->query('question'));
 
-        if($input === null){
+        if ($input === null) {
             return response()->json(['data' => 'Input text not set.'], Response::HTTP_BAD_REQUEST);
         }
 
