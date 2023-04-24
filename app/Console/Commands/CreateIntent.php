@@ -29,5 +29,7 @@ class CreateIntent extends Command
         $service = new DiagFlowAuthService;
         $service->createAgent();
         $service->createIntent();
+
+        $this->info('Terminated');
     }
 }

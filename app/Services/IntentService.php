@@ -2,6 +2,7 @@
 
 namespace App\Services;
 
+use Google\ApiCore\ApiException;
 use Google\Cloud\Dialogflow\V2\Agent as V2Agent;
 use Google\Cloud\Dialogflow\V2\AgentsClient;
 use Google\Cloud\Dialogflow\V2\EntityTypesClient;
@@ -63,17 +64,18 @@ class IntentService
                 'display_name'     => $intentData['displayName'],
                 'training_phrases' =>  $this->setTrainingPhase($intentData)
             ]);
-            
             $this->setMessages($intent, $intentData['messages']);
 
             $parent        = $intentsClient->projectAgentName($this->projectId);
             $createdIntent = $intentsClient->createIntent($parent, $intent);
 
             $intentsClient->close();
-        } catch (\Exception $th) {
-
+        } catch (ApiException $e) {
+            if($createdIntent === null){
+                throw $e;
+            }
             $intentsClient->deleteIntent($createdIntent->getName());
-            throw $th;
+            throw $e;
         }
     }
 }
